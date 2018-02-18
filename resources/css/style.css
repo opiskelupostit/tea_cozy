@@ -1,3 +1,5 @@
+/* General section */
+
 body{
     
     background-color: black; 
@@ -14,6 +16,8 @@ body{
     text-align: center;   
 }
 
+/* Header section */
+
 header {     
     height: 69px;
     width: 100%;
@@ -25,10 +29,6 @@ header {
     position: fixed;
     z-index: 1;  
 }
-
-.logo {
-   
-}
     
 .logo img {
         
@@ -36,9 +36,6 @@ header {
     padding: 10px;    
 }
 
-nav {
-   
-}
 
 nav ul {
      
@@ -47,31 +44,28 @@ nav ul {
     padding-bottom: 15px; 
 }
 
-nav li {
-    
-}
-
 nav a {
     
     color: white;
     font-size: 20px;
     padding: 20px;
     display: inline-block;
+    text-decoration: underline; 
 }
+
+/* Main container */
 
 .main-container {
      
     width: 100%;
-    height: auto;
     margin: 0 auto;
-     
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
 }
 
-.header-container {
-    
-    width: 100%;
-    height: 69px;
-}
+/* Mission section */
 
 .flex-container-mission {
     
@@ -80,30 +74,30 @@ nav a {
     max-width: 1200px;
     height: 700px; 
     background-image: url("/resources/images/img-mission-background.jpg");
-    align-items: center;
-    border: none;
-    justify-content: center; 
-     
+    align-items: center;   
 }
 
 .our_mission {
     
-    width: 1200px; 
-     
-    
+    width: 1200px;
 }
   
 .mission_text {
     
     background-color: black; 
-     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
-.flex-container-store {
+/* Tea of the month section */
+
+.store-container {
     
     margin: 0 auto;
     width: 1000px;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-wrap: wrap;   
     align-items: center;
@@ -128,7 +122,9 @@ nav a {
     padding-bottom: 10px;
 }
 
-.flex-container-locations {
+/* Location section */
+
+.locations-container {
     
     width: 1200px;
     height: 560px;
@@ -138,7 +134,9 @@ nav a {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 80px;  
+    margin-top: 80px;
+    flex-wrap: wrap;
+     
 }
 
 .location {
@@ -151,10 +149,18 @@ nav a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    opacity: 1;
+    opacity: 1;  
     
+     
+}
+
+.title {
+    
+    width: 100%;
     
 }
+ 
+/* Info section */
 
 .info {
     
@@ -162,12 +168,12 @@ nav a {
     height: 200px;
 }
 
+/* Copyright */
+
 .copyright {
     
     display: flex;
     justify-content: flex-start;
     padding-left: 20px;
-    
 }
 
- 
